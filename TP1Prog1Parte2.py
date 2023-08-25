@@ -40,19 +40,10 @@ sn=int(input("Ingrese el segundo numero\n"))
 tn=int(input("Ingrese el tercer numero\n"))
 media=(pn+sn+tn)/3
 #Ejercicio 7
-min=int(input("Ingrese los minutos\n"))
-if str(min).endswith("0"):
-    hor=min
-    for z in range(int(min/60)):
-        min=min-60
-    print(f"Son {(hor/60)//1} hora/s con {min} minuto/s")
-elif min<60:
-    print(f"Son {(min/60)//1} hora/s con {min} minuto/s")
-elif min>60:
-    for z in range(len(str(min))):
-        mints=min/10
-    mints=mints-(mints//1)
-    print(f"Son {round(min/60)} hora/s con {round(mints*10)} minuto/s")
+minutos= int(input(print("Ingrese los minutos")))
+horas= int(minutos/60)
+min_restantes= minutos- horas*60
+print(f"Minutos ingresados {minutos}, son {horas} horas y {min_restantes} min")
 #Ejercicio 8
 suel=70000
 suelcom=suel*1.10
