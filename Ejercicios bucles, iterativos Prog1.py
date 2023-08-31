@@ -12,8 +12,11 @@ for z in menlist:
     encpalab=""
     for y in palab:
         lett=y
-        enclett=abc[(abc.index(lett)+corr) % 27]
-        encpalab=encpalab+enclett
+        if lett in abc:
+            enclett=abc[(abc.index(lett)+corr) % 27]
+            encpalab=encpalab+enclett
+        else:
+            encpalab=encpalab+lett
     menenlist.append(encpalab)
     p+=1
 print("Su mensaje encriptado es este Jefe:"," ".join(menenlist))
