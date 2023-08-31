@@ -30,6 +30,6 @@ while x != 0:
     for y in z:
         if int(y) % 2 == 0:
             contpar+=1
-        elif int(y) % 3 == 0:
+        else:
             contimpar+=1
     print(f"El numero ingresado tiene {contpar} digito/s par/es y {contimpar} digito/s impar/es")
