@@ -1,0 +1,20 @@
+body.fondo{
+  background-image: url(https://m.media-amazon.com/images/M/MV5BZjQxMzdhNTYtMmY1Ny00OTM1LWEzZTgtMTMyNjQxZDY2NDM0XkEyXkFqcGdeQXVyNjg2NDc2ODA@._V1_.jpg);
+  background-size: cover;
+}
+body.fondo{
+  background-repeat: no-repeat;
+}
+#texto1{
+  font-size: 40px;
+  
+}
+button.boton:hover{
+  background: #343434;
+  border: none;
+  padding: none;
+}
+button.boton {
+  background: none;
+  border: none;  
+}
