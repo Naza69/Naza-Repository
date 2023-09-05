@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head class="head">
+        <font color="#96ff08"><h1>Formulario de carga de datos con Java Script</h1></font>
+        <meta charset="UTF-8">
+        <title>Formulario de carga de archivos con Java Script</title>
+        <script>
+            function mostrardatos(){
+                vnombre=document.getElementById("nombre").value;
+                vappelido=document.getElementById("apellido").value;
+                dni=document.getElementById("nroDNI").value;
+                fechanac=document.getElementById("nacimiento").value;
+                ubic=document.getElementById("localidad").value;
+                ingles=document.getElementById("ingles").value;
+                español=document.getElementById("español").value;
+                frances=document.getElementById("frances").value;
+                chino=document.getElementById("chino").value;
+                rangoingles=document.getElementById("nivelingles").value;
+                rangoespañol=document.getElementById("nivelespañol").value;
+                rangofrances=document.getElementById("nivelfrances").value;
+                rangochino=document.getElementById("nivelchino").value;
+                document.write("Nombre:", vnombre, "<br>"
+                , "Apellido:", vappelido, "<br>", "DNI:", dni, "<br>", "Fecha de nacimiento:", fechanac, "<br>",
+                "Ubicacion:", ubic, "<br>", "Idiomas conocidos o hablados:<br>", "Español:", español, "<br>",
+                "Ingles:", ingles, "<br>", "Frances:", frances, "<br>", "Chino:", chino, "<br>",
+                "Niveles de conocimiento de los idiomas", "<br>", "Español:", rangoespañol, "<br>", "Ingles:",
+                rangoingles, "<br>", "Frances:", rangofrances, "<br>", "Chino:", rangochino)
+            }
+
+        </script>
+        <style>
+            body{
+                background-image: url(https://c4.wallpaperflare.com/wallpaper/277/354/502/feelsbadman-pepe-meme-memes-wallpaper-preview.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            article{position: absolute;
+                left: 370px;
+                top: 200px;
+            }
+            h1{
+                position: absolute;
+                left: 320px;
+                top: 30px;
+            }
+            header.titulo1{position: absolute;
+                right: 150px;
+                top: -30px;
+            }
+            header.titulo2{
+                position:absolute;
+                left: 0px;
+                top: 180px;
+            }
+            #español{position: absolute;
+                left: 0px;
+                top: 240px;
+            }
+            label.label1{
+                position: absolute;
+                left: 30px;
+                top:240px;
+                font-size: 17px;
+            }
+            label.label2{
+                position: absolute;
+                left: 30px;
+                top: 270px;
+                font-size: 17px;
+            }
+            #ingles{
+                position: absolute;
+                left: 0px;
+                top: 270px;
+            }
+            #frances{
+                position: absolute;
+                left: 0px;
+                top: 300px;
+            }
+            .label3{position: absolute;
+                left: 30px;
+                top: 300px;
+                font-size: 17px;
+            }
+            #chino{
+                position: absolute;
+                left: 0px;
+                top: 330px;
+            }
+            .label4{
+                position: absolute;
+                left: 30px;
+                top: 330px;
+                font-size: 17px;
+            }
+            .titulo3{
+                position: absolute;
+                left: 300px;
+                top: 180px
+            }
+            #nivelespañol{
+                position: absolute;
+                left: 290px;
+                top: 240px;
+            }
+            #nivelingles{
+                position: absolute;
+                left: 290px;
+                top: 270px;
+            }
+            #nivelfrances{
+                position: absolute;
+                left: 290px;
+                top: 300px;
+            }
+            #nivelchino{
+                position: absolute;
+                left: 290px;
+                top: 330px;
+            }
+            .finalboton1{
+                position: absolute;
+                left: 100px;
+                top: 360px;
+            }
+            .finalboton2{
+                position: absolute;
+                left: 200px;
+                top: 360px
+                ;
+            }
+        </style>
+    </head>
+    <body>
+        <font color="#96ff08">
+        <form action="" method="post">
+            <article class="articulo">
+                <header class="titulo1"><strong>Formulario carga de datos</strong></header>
+                <p></p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido">
+                <p></p>
+                <br>
+                <label for="nroDNI">Nro DNI: </label>
+                <input type="number" id="nroDNI">
+                <label for="nacimiento">Fecha de nacimiento: </label>
+                <input type="date" id="nacimiento">
+                <p></p>
+                <br>
+                <label for="domicilio">Domicilio: </label>
+                <input type="text" id="domicilio">
+                <label for="localidad">Localidad: </label>
+                <input type="text" id="localidad">
+            </article>
+            <article class="articulo">
+                <header class="titulo2"><strong>Idiomas que conoces</strong></header>
+                <p></p>
+                <label for="español" class="label1">Español</label>
+                <input type="range" id="nivelespañol">
+                <input type="checkbox" id="español">
+                <label for="ingles" class="label2">Ingles</label>
+                <input type="range" id="nivelingles">
+                <input type="checkbox" id="ingles">
+                <label for="frances" class="label3">Frances</label>
+                <input type="range" id="nivelfrances">
+                <input type="checkbox" id="frances">
+                <label for="chino" class="label4">Chino</label>
+                <input type="range" id="nivelchino">
+                <input type="checkbox" id="chino">
+                <header class="titulo3"><strong>Nivel de conocimiento</strong></header>
+                <button type="submit" onclick="mostrardatos()" class="finalboton1">Enviar</button>
+                <button type="reset" class="finalboton2">Reiniciar</button>
+            </article>
+        </form>
+    </font>
+    </body>
+</html>
