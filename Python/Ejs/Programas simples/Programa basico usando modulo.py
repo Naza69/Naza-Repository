@@ -1,10 +1,10 @@
-print("Hola usuario! Vamos a usar un modulo para ejecutar este programa!")
+"""print("Hola usuario! Vamos a usar un modulo para ejecutar este programa!")
 x=input("Hasta ahora solo se tiene el modulo de una minicalculadora" 
-      ", ingrese el numero de operacion que desea realizar"  
-      "\n1)Suma"
-      "\n2)Resta"
-      "\n3)Multiplicacion"
-      "\n4)Division\n")
+    ", ingrese el numero de operacion que desea realizar"  
+    "\n1)Suma"
+    "\n2)Resta"
+    "\n3)Multiplicacion"
+    "\n4)Division\n")
 if x=="1":
     import sys
     sys.path.append(r"C:\Users\NAZA\Desktop\Codigo\Python\Ejs\Mds")
@@ -34,4 +34,4 @@ elif x=="4":
     y=int(input("Ingrese el segundo numero: "))
     MiniCalc.divi(z,y)
 else:
-    print("Ningun numero ingresado corresponde con las opciones dadas")
+    print("Ningun numero ingresado corresponde con las opciones dadas")"""
