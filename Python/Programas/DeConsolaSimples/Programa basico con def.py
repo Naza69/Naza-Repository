@@ -3,9 +3,9 @@ print("Ingrese un numero")
 x=int(input())
 def funcionbasica(x):
    if x==0:
-    z=x+1
+      z=x+1
    else:
-    z=x+2
+      z=x+2
    return z
 y=funcionbasica(x)
 print(y)

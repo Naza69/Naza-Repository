@@ -6,8 +6,8 @@ print("Como estas el dia de hoy",name+"?")
 resp=input()
 resplower=resp.lower()
 if resplower=="mal":
- print("Lamento escuchar eso",name)
+    print("Lamento escuchar eso",name)
 else:
- print("Me alegro!")
+    print("Me alegro!")
 
 

@@ -7,29 +7,29 @@ x=input("Hasta ahora solo se tiene el modulo de una minicalculadora"
     "\n4)Division\n")
 if x=="1":
     import sys
-    sys.path.append(r"C:\Users\NAZA\Desktop\CodPersonal\Python\Ejs\Mds")
-    import MiniCalc 
+    sys.path.append(r"C:\Users\Naza\Documents\Codigo\CodPersonal\Python\Programas\MdsConsola")
+    from ..MdsConsola import MiniCalc 
     z=int(input("Ingrese el primer numero: "))
     y=int(input("Ingrese el segundo numero: "))
     MiniCalc.suma(z,y)
 elif x=="2":
     import sys
-    sys.path.append(r"C:\Users\NAZA\Desktop\CodPersonal\Python\Ejs\Mds")
-    import MiniCalc 
+    sys.path.append(r"C:\Users\Naza\Documents\Codigo\CodPersonal\Python\Programas\MdsConsola")
+    from ..MdsConsola import MiniCalc
     z=int(input("Ingrese el primer numero: "))
     y=int(input("Ingrese el segundo numero: "))
     MiniCalc.resta(z,y)
 elif x=="3":
     import sys
-    sys.path.append(r"C:\Users\NAZA\Desktop\CodPersonal\Python\Ejs\Mds")
-    import MiniCalc 
+    sys.path.append(r"C:\Users\Naza\Documents\Codigo\CodPersonal\Python\Programas\MdsConsola")
+    from ..MdsConsola import MiniCalc
     z=int(input("Ingrese el primer numero: "))
     y=int(input("Ingrese el segundo numero: "))
     MiniCalc.mult(z,y)
 elif x=="4":
     import sys
-    sys.path.append(r"C:\Users\NAZA\Desktop\CodPersonal\Python\Ejs\Mds")
-    import MiniCalc 
+    sys.path.append(r"C:\Users\Naza\Documents\Codigo\CodPersonal\Python\Programas\MdsConsola")
+    from ..MdsConsola import MiniCalc
     z=int(input("Ingrese el primer numero: "))
     y=int(input("Ingrese el segundo numero: "))
     MiniCalc.divi(z,y)
